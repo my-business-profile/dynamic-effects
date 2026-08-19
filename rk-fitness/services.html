@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    >
+
+    <meta
+        name="description"
+        content="Explore the services available at R.K. Fitness and Sports in Durg."
+    >
+
+    <meta
+        name="theme-color"
+        content="#171615"
+    >
+
+    <title>Services | R.K. Fitness and Sports</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="services.css">
+
+</head>
+
+
+<body data-page="services">
+
+
+    <!-- =====================================================
+         LOADER
+    ====================================================== -->
+
+    <div class="page-loader" id="pageLoader">
+
+        <div class="loader-noise"></div>
+
+        <div class="loader-orbit orbit-one"></div>
+        <div class="loader-orbit orbit-two"></div>
+
+        <div class="loader-core">
+
+            <div class="loader-rk">
+                RK
+            </div>
+
+            <div class="loader-name">
+                R.K. FITNESS
+            </div>
+
+            <div class="loader-sub">
+                AND SPORTS
+            </div>
+
+            <div class="loader-line">
+                <span></span>
+            </div>
+
+            <div class="loader-status">
+                LOADING SERVICES
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="ambient-grid"></div>
+
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <canvas id="particleCanvas"></canvas>
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="site-header">
+
+        <a href="index.html" class="brand">
+
+            <span class="brand-mark">
+                RK
+            </span>
+
+            <span class="brand-copy">
+                <strong>R.K.</strong>
+                <small>FITNESS AND SPORTS</small>
+            </span>
+
+        </a>
+
+
+        <nav class="desktop-nav">
+
+            <a href="index.html" class="nav-link">
+                Home
+            </a>
+
+            <a href="services.html" class="nav-link active">
+                Services
+            </a>
+
+            <a href="index.html#location" class="nav-link">
+                Location
+            </a>
+
+        </nav>
+
+
+        <a
+            href="https://wa.me/919329081008?text=Hi%20R.K.%20Fitness%20and%20Sports!%20I%27m%20interested%20in%20your%20services."
+            class="header-whatsapp magnetic"
+            target="_blank"
+            rel="noopener"
+        >
+            <span class="button-icon">↗</span>
+            WhatsApp
+        </a>
+
+
+        <button
+            class="mobile-menu-button"
+            id="mobileMenuButton"
+            aria-label="Open navigation"
+            aria-expanded="false"
+        >
+            <span></span>
+            <span></span>
+        </button>
+
+    </header>
+
+
+    <div class="mobile-menu" id="mobileMenu">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="services.html">
+            Services
+        </a>
+
+        <a href="index.html#location">
+            Location
+        </a>
+
+        <a
+            href="https://wa.me/919329081008?text=Hi%20R.K.%20Fitness%20and%20Sports!%20I%27m%20interested%20in%20your%20services."
+            target="_blank"
+            rel="noopener"
+        >
+            WhatsApp
+        </a>
+
+    </div>
+
+
+    <main>
+
+
+        <!-- =================================================
+             SERVICES HERO
+        ================================================== -->
+
+        <section class="services-hero section-dark">
+
+            <div class="services-hero-lines"></div>
+
+            <div class="container services-hero-inner">
+
+                <span class="eyebrow reveal">
+                    R.K. FITNESS AND SPORTS
+                </span>
+
+                <h1 class="services-main-title reveal reveal-delay-1">
+
+                    ALL
+                    <span>22</span>
+                    SERVICES
+
+                </h1>
+
+                <p class="services-intro reveal reveal-delay-2">
+
+                    Explore the complete range of fitness,
+                    training, recreational and sports activities
+                    listed for R.K. Fitness and Sports.
+
+                </p>
+
+
+                <div class="service-count reveal reveal-delay-3">
+
+                    <strong>
+                        22
+                    </strong>
+
+                    <span>
+                        WAYS TO<br>
+                        MOVE
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SERVICE GRID
+        ================================================== -->
+
+        <section class="all-services section-light">
+
+            <div class="container">
+
+                <div class="services-toolbar reveal">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            EXPLORE
+                        </span>
+
+                        <h2>
+                            Find your
+                            <span>discipline.</span>
+                        </h2>
+
+                    </div>
+
+
+                    <div class="service-total">
+                        22 AVAILABLE
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="services-grid"
+                    id="servicesGrid"
+                >
+                    <!-- Generated by services.js -->
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SERVICES CTA
+        ================================================== -->
+
+        <section class="services-bottom-cta section-brown">
+
+            <div class="container">
+
+                <div class="bottom-cta-card reveal">
+
+                    <div>
+
+                        <span class="eyebrow light-eyebrow">
+                            WANT TO KNOW MORE?
+                        </span>
+
+                        <h2>
+                            Talk directly
+                            <span>to R.K.</span>
+                        </h2>
+
+                        <p>
+                            Ask about the available services,
+                            timings and current information.
+                        </p>
+
+                    </div>
+
+
+                    <div class="cta-actions">
+
+                        <a
+                            href="https://wa.me/919329081008?text=Hi%20R.K.%20Fitness%20and%20Sports!%20I%27d%20like%20to%20know%20more%20about%20your%20services."
+                            class="primary-button magnetic"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            WhatsApp
+                            <b>↗</b>
+                        </a>
+
+
+                        <a
+                            href="index.html#location"
+                            class="secondary-button light-button magnetic"
+                        >
+                            Find Location
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =====================================================
+         FLOATING WHATSAPP
+    ====================================================== -->
+
+    <a
+        class="floating-whatsapp"
+        href="https://wa.me/919329081008?text=Hi%20R.K.%20Fitness%20and%20Sports!%20I%27m%20interested%20in%20your%20services."
+        target="_blank"
+        rel="noopener"
+        aria-label="Contact R.K. Fitness and Sports on WhatsApp"
+    >
+
+        <span class="whatsapp-pulse"></span>
+
+        <span class="whatsapp-symbol">
+            W
+        </span>
+
+        <span class="whatsapp-text">
+            WhatsApp
+        </span>
+
+    </a>
+
+
+    <footer class="site-footer">
+
+        <div class="container footer-inner">
+
+            <div class="footer-brand">
+
+                <span class="footer-rk">
+                    RK
+                </span>
+
+                <div>
+                    <strong>
+                        R.K. FITNESS AND SPORTS
+                    </strong>
+
+                    <small>
+                        DURG, CHHATTISGARH
+                    </small>
+                </div>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="services.html">
+                    Services
+                </a>
+
+                <a href="index.html#location">
+                    Location
+                </a>
+
+            </div>
+
+
+            <div class="footer-copy">
+                © <span id="year"></span> R.K. Fitness and Sports
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="assets.js"></script>
+    <script src="services.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

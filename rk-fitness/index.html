@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    >
+
+    <meta
+        name="description"
+        content="R.K. Fitness and Sports — fitness, training and sports facilities in Durg, Chhattisgarh."
+    >
+
+    <meta
+        name="theme-color"
+        content="#171615"
+    >
+
+    <title>R.K. Fitness and Sports | Durg</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="home">
+
+    <!-- =====================================================
+         PAGE LOADER
+    ====================================================== -->
+
+    <div class="page-loader" id="pageLoader">
+
+        <div class="loader-noise"></div>
+
+        <div class="loader-orbit orbit-one"></div>
+        <div class="loader-orbit orbit-two"></div>
+
+        <div class="loader-core">
+
+            <div class="loader-rk">
+                RK
+            </div>
+
+            <div class="loader-name">
+                R.K. FITNESS
+            </div>
+
+            <div class="loader-sub">
+                AND SPORTS
+            </div>
+
+            <div class="loader-line">
+                <span></span>
+            </div>
+
+            <div class="loader-status">
+                LOADING EXPERIENCE
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- =====================================================
+         AMBIENT EFFECTS
+    ====================================================== -->
+
+    <div class="ambient-grid"></div>
+
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- =====================================================
+         NAVIGATION
+    ====================================================== -->
+
+    <header class="site-header" id="siteHeader">
+
+        <a href="index.html" class="brand">
+
+            <span class="brand-mark">
+                RK
+            </span>
+
+            <span class="brand-copy">
+                <strong>R.K.</strong>
+                <small>FITNESS AND SPORTS</small>
+            </span>
+
+        </a>
+
+        <nav class="desktop-nav">
+
+            <a href="index.html" class="nav-link active">
+                Home
+            </a>
+
+            <a href="services.html" class="nav-link">
+                Services
+            </a>
+
+            <a href="#location" class="nav-link">
+                Location
+            </a>
+
+        </nav>
+
+        <a
+            href="https://wa.me/919329081008?text=Hi%20R.K.%20Fitness%20and%20Sports!%20I%27m%20interested%20in%20joining%20and%20would%20like%20to%20know%20more%20about%20your%20services."
+            class="header-whatsapp magnetic"
+            target="_blank"
+            rel="noopener"
+        >
+            <span class="button-icon">↗</span>
+            WhatsApp
+        </a>
+
+        <button
+            class="mobile-menu-button"
+            id="mobileMenuButton"
+            aria-label="Open navigation"
+            aria-expanded="false"
+        >
+            <span></span>
+            <span></span>
+        </button>
+
+    </header>
+
+    <!-- MOBILE NAV -->
+
+    <div class="mobile-menu" id="mobileMenu">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="services.html">
+            Services
+        </a>
+
+        <a href="#location">
+            Location
+        </a>
+
+        <a
+            href="https://wa.me/919329081008?text=Hi%20R.K.%20Fitness%20and%20Sports!%20I%27m%20interested%20in%20joining%20and%20would%20like%20to%20know%20more%20about%20your%20services."
+            target="_blank"
+            rel="noopener"
+        >
+            WhatsApp
+        </a>
+
+    </div>
+
+    <main>
+
+        <!-- =================================================
+             HERO
+        ================================================== -->
+
+        <section class="hero section-dark">
+
+            <div class="hero-background">
+
+                <div
+                    class="hero-photo"
+                    style="
+                        background-image:
+                        linear-gradient(
+                            90deg,
+                            rgba(20,19,18,.98) 0%,
+                            rgba(20,19,18,.82) 42%,
+                            rgba(20,19,18,.35) 100%
+                        ),
+                        url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1800&q=88');
+                    "
+                ></div>
+
+                <div class="hero-metal"></div>
+
+                <div class="hero-yellow-sweep sweep-one"></div>
+                <div class="hero-yellow-sweep sweep-two"></div>
+
+            </div>
+
+            <div class="hero-content container">
+
+                <div class="hero-kicker reveal">
+                    <span class="kicker-line"></span>
+                    DURG • CHHATTISGARH
+                </div>
+
+                <h1 class="hero-title reveal reveal-delay-1">
+
+                    <span>R.K.</span>
+
+                    <span class="outline-text">
+                        FITNESS
+                    </span>
+
+                    <span>AND SPORTS</span>
+
+                </h1>
+
+                <p class="hero-description reveal reveal-delay-2">
+
+                    A high-energy destination for fitness,
+                    training and sports — built around movement,
+                    discipline and an active lifestyle.
+
+                </p>
+
+                <div class="hero-actions reveal reveal-delay-3">
+
+                    <a
+                        href="services.html"
+                        class="primary-button magnetic"
+                    >
+                        <span>Explore Services</span>
+                        <b>↗</b>
+                    </a>
+
+                    <a
+                        href="https://wa.me/919329081008?text=Hi%20R.K.%20Fitness%20and%20Sports!%20I%27m%20interested%20in%20joining%20and%20would%20like%20to%20know%20more%20about%20your%20services."
+                        class="secondary-button magnetic"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        WhatsApp Us
+                    </a>
+
+                </div>
+
+                <div class="hero-micro-stats reveal reveal-delay-4">
+
+                    <div>
+                        <strong>22</strong>
+                        <span>Services</span>
+                    </div>
+
+                    <div>
+                        <strong>4.5</strong>
+                        <span>Google Rating</span>
+                    </div>
+
+                    <div>
+                        <strong>2005</strong>
+                        <span>Established</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="hero-side-label">
+                MOVE • TRAIN • PLAY
+            </div>
+
+            <div class="hero-scroll-indicator">
+                <span></span>
+                SCROLL
+            </div>
+
+        </section>
+
+        <!-- =================================================
+             INTRO
+        ================================================== -->
+
+        <section class="intro section-light">
+
+            <div class="container intro-layout">
+
+                <div class="section-number reveal">
+                    01
+                </div>
+
+                <div class="intro-heading reveal">
+
+                    <span class="eyebrow">
+                        MORE THAN A WORKOUT
+                    </span>
+
+                    <h2>
+                        Built around
+                        <em>movement.</em>
+                    </h2>
+
+                </div>
+
+                <div class="intro-copy reveal">
+
+                    <p>
+                        R.K. Fitness and Sports brings together
+                        fitness, training and sports experiences
+                        under one roof in Durg.
+                    </p>
+
+                    <p>
+                        From strength and conditioning to
+                        recreational and competitive activities,
+                        the environment is designed for people
+                        who want to keep moving.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="marquee-strip">
+
+                <div class="marquee-track">
+
+                    <span>TRAIN</span>
+                    <i>◆</i>
+                    <span>MOVE</span>
+                    <i>◆</i>
+                    <span>PERFORM</span>
+                    <i>◆</i>
+                    <span>PLAY</span>
+                    <i>◆</i>
+
+                    <span>TRAIN</span>
+                    <i>◆</i>
+                    <span>MOVE</span>
+                    <i>◆</i>
+                    <span>PERFORM</span>
+                    <i>◆</i>
+                    <span>PLAY</span>
+                    <i>◆</i>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =================================================
+             FEATURE HIGHLIGHTS
+        ================================================== -->
+
+        <section class="highlights section-dark">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <div>
+                        <span class="eyebrow">
+                            THE EXPERIENCE
+                        </span>
+
+                        <h2>
+                            Space to
+                            <span>push further.</span>
+                        </h2>
+                    </div>
+
+                    <div class="section-index">
+                        02 / 06
+                    </div>
+
+                </div>
+
+                <div class="highlight-grid">
+
+                    <article class="highlight-card highlight-large tilt-card reveal">
+
+                        <div class="card-number">
+                            01
+                        </div>
+
+                        <div class="highlight-icon">
+                            ◈
+                        </div>
+
+                        <h3>
+                            TRAINING
+                        </h3>
+
+                        <p>
+                            Strength, conditioning, high-intensity
+                            training and multiple fitness disciplines.
+                        </p>
+
+                        <span class="card-arrow">
+                            ↗
+                        </span>
+
+                    </article>
+
+                    <article class="highlight-card tilt-card reveal reveal-delay-1">
+
+                        <div class="card-number">
+                            02
+                        </div>
+
+                        <div class="highlight-icon">
+                            ◎
+                        </div>
+
+                        <h3>
+                            SPORTS
+                        </h3>
+
+                        <p>
+                            A broad sports offering extending beyond
+                            traditional gym training.
+                        </p>
+
+                        <span class="card-arrow">
+                            ↗
+                        </span>
+
+                    </article>
+
+                    <article class="highlight-card brown-card tilt-card reveal reveal-delay-2">
+
+                        <div class="card-number">
+                            03
+                        </div>
+
+                        <div class="highlight-icon">
+                            △
+                        </div>
+
+                        <h3>
+                            ENERGY
+                        </h3>
+
+                        <p>
+                            A motivating environment designed to
+                            keep movement at the centre.
+                        </p>
+
+                        <span class="card-arrow">
+                            ↗
+                        </span>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =================================================
+             SERVICES SHOWCASE
+        ================================================== -->
+
+        <section class="services-showcase section-light" id="servicesShowcase">
+
+            <div class="container">
+
+                <div class="section-heading dark-heading reveal">
+
+                    <div>
+                        <span class="eyebrow">
+                            WHAT'S AVAILABLE
+                        </span>
+
+                        <h2>
+                            Choose your
+                            <span>movement.</span>
+                        </h2>
+                    </div>
+
+                    <div class="drag-note">
+                        SWIPE / DRAG
+                    </div>
+
+                </div>
+
+                <div class="service-carousel-shell">
+
+                    <button
+                        class="carousel-arrow carousel-left"
+                        id="serviceLeft"
+                        aria-label="Scroll services left"
+                    >
+                        ←
+                    </button>
+
+                    <div
+                        class="service-carousel"
+                        id="featuredServices"
+                    >
+                        <!-- Generated by services.js -->
+                    </div>
+
+                    <button
+                        class="carousel-arrow carousel-right"
+                        id="serviceRight"
+                        aria-label="Scroll services right"
+                    >
+                        →
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =================================================
+             TRAINING ENVIRONMENT
+        ================================================== -->
+
+        <section class="environment section-brown">
+
+            <div class="container environment-grid">
+
+                <div class="environment-copy reveal">
+
+                    <span class="eyebrow light-eyebrow">
+                        THE TRAINING FLOOR
+                    </span>
+
+                    <h2>
+                        Built for
+                        <span>different goals.</span>
+                    </h2>
+
+                    <p>
+                        Whether the goal is strength, endurance,
+                        movement, recreation or simply staying
+                        active, R.K. Fitness and Sports offers
+                        multiple ways to train and play.
+                    </p>
+
+                    <div class="environment-points">
+
+                        <div>
+                            <b>01</b>
+                            <span>Strength & Conditioning</span>
+                        </div>
+
+                        <div>
+                            <b>02</b>
+                            <span>High-Intensity Training</span>
+                        </div>
+
+                        <div>
+                            <b>03</b>
+                            <span>Fitness Classes</span>
+                        </div>
+
+                        <div>
+                            <b>04</b>
+                            <span>Sports & Recreation</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="environment-visual reveal">
+
+                    <div class="visual-frame">
+
+                        <div class="visual-inner">
+
+                            <div class="visual-ring"></div>
+
+                            <div class="visual-rk">
+                                RK
+                            </div>
+
+                            <span class="visual-tag">
+                                FITNESS
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =================================================
+             REVIEWS
+        ================================================== -->
+
+        <section class="reviews section-dark">
+
+            <div class="container">
+
+                <div class="review-top reveal">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            GOOGLE REVIEWS
+                        </span>
+
+                        <h2>
+                            What people
+                            <span>are saying.</span>
+                        </h2>
+
+                    </div>
+
+                    <div class="rating-display">
+
+                        <strong>
+                            4.5
+                        </strong>
+
+                        <div>
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+
+                            <small>
+                                376 Google Reviews
+                            </small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="review-grid">
+
+                    <article class="review-card reveal">
+
+                        <div class="quote-mark">
+                            “
+                        </div>
+
+                        <p>
+                            R K Fitness is a great gym! The equipment
+                            is very good quality. I always find what I
+                            need to workout. The area is clean, which
+                            makes me feel comfortable.
+                        </p>
+
+                        <div class="review-meta">
+                            <span>PUBLICLY SURFACED REVIEW</span>
+                            <span>01</span>
+                        </div>
+
+                    </article>
+
+                    <article class="review-card featured-review reveal reveal-delay-1">
+
+                        <div class="quote-mark">
+                            “
+                        </div>
+
+                        <p>
+                            One of the best fitness centers in Durg
+                            to work out with wonderful ambience.
+                        </p>
+
+                        <div class="review-meta">
+                            <span>PUBLICLY SURFACED REVIEW</span>
+                            <span>02</span>
+                        </div>
+
+                    </article>
+
+                    <article class="review-card reveal reveal-delay-2">
+
+                        <div class="quote-mark">
+                            “
+                        </div>
+
+                        <p>
+                            Awesome place for work out.
+                            Well equipped.
+                        </p>
+
+                        <div class="review-meta">
+                            <span>PUBLICLY SURFACED REVIEW</span>
+                            <span>03</span>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =================================================
+             FINAL CTA
+        ================================================== -->
+
+        <section class="final-cta section-light">
+
+            <div class="cta-energy"></div>
+
+            <div class="container final-cta-inner reveal">
+
+                <span class="eyebrow">
+                    READY TO MOVE?
+                </span>
+
+                <h2>
+                    Your next session
+                    <span>starts here.</span>
+                </h2>
+
+                <p>
+                    Ask about the available services,
+                    visit the facility or connect directly.
+                </p>
+
+                <div class="cta-actions">
+
+                    <a
+                        href="https://wa.me/919329081008?text=Hi%20R.K.%20Fitness%20and%20Sports!%20I%27d%20like%20to%20know%20more%20about%20joining%20and%20your%20available%20services."
+                        class="primary-button magnetic"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        WhatsApp Now
+                        <b>↗</b>
+                    </a>
+
+                    <a
+                        href="tel:+917000536742"
+                        class="secondary-button dark-button magnetic"
+                    >
+                        Call 7000536742
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =================================================
+             LOCATION
+        ================================================== -->
+
+        <section
+            class="location section-dark"
+            id="location"
+        >
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            FIND US
+                        </span>
+
+                        <h2>
+                            Come to
+                            <span>R.K.</span>
+                        </h2>
+
+                    </div>
+
+                    <div class="section-index">
+                        06 / 06
+                    </div>
+
+                </div>
+
+                <div class="map-wrapper reveal">
+
+                    <iframe
+                        title="R.K. Fitness and Sports location"
+                        src="https://www.google.com/maps?q=R.K.%20Fitness%20and%20Sports%2C%20In%20front%20of%20Borsi%20Lake%2C%20Borsi%20Utai%20Road%2C%20Bamleshwari%20Colony%2C%20Durg%2C%20Chhattisgarh%20491001&output=embed"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        allowfullscreen
+                    ></iframe>
+
+                    <div class="map-overlay-label">
+                        R.K. FITNESS AND SPORTS
+                    </div>
+
+                </div>
+
+                <div class="location-bottom">
+
+                    <div class="address-block reveal">
+
+                        <span class="eyebrow">
+                            ADDRESS
+                        </span>
+
+                        <h3>
+                            R.K. Fitness and Sports
+                        </h3>
+
+                        <p>
+                            In front of Borsi Lake,<br>
+                            Borsi Utai Road,<br>
+                            Bamleshwari Colony,<br>
+                            Durg, Chhattisgarh — 491001, India
+                        </p>
+
+                    </div>
+
+                    <div class="contact-block reveal">
+
+                        <a
+                            href="tel:+917000536742"
+                            class="contact-line"
+                        >
+                            <span>
+                                CALL
+                            </span>
+
+                            <strong>
+                                7000536742
+                            </strong>
+                        </a>
+
+                        <a
+                            href="tel:+919329081008"
+                            class="contact-line"
+                        >
+                            <span>
+                                CALL
+                            </span>
+
+                            <strong>
+                                9329081008
+                            </strong>
+                        </a>
+
+                        <a
+                            href="https://wa.me/919329081008?text=Hi%20R.K.%20Fitness%20and%20Sports!%20I%27m%20interested%20in%20your%20services."
+                            target="_blank"
+                            rel="noopener"
+                            class="contact-line whatsapp-line"
+                        >
+                            <span>
+                                WHATSAPP
+                            </span>
+
+                            <strong>
+                                9329081008 ↗
+                            </strong>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- =====================================================
+         FLOATING WHATSAPP
+    ====================================================== -->
+
+    <a
+        class="floating-whatsapp"
+        href="https://wa.me/919329081008?text=Hi%20R.K.%20Fitness%20and%20Sports!%20I%27m%20interested%20in%20joining%20and%20would%20like%20to%20know%20more%20about%20your%20services."
+        target="_blank"
+        rel="noopener"
+        aria-label="Contact R.K. Fitness and Sports on WhatsApp"
+    >
+
+        <span class="whatsapp-pulse"></span>
+
+        <span class="whatsapp-symbol">
+            W
+        </span>
+
+        <span class="whatsapp-text">
+            WhatsApp
+        </span>
+
+    </a>
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container footer-inner">
+
+            <div class="footer-brand">
+
+                <span class="footer-rk">
+                    RK
+                </span>
+
+                <div>
+                    <strong>
+                        R.K. FITNESS AND SPORTS
+                    </strong>
+
+                    <small>
+                        DURG, CHHATTISGARH
+                    </small>
+                </div>
+
+            </div>
+
+            <div class="footer-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="services.html">
+                    Services
+                </a>
+
+                <a href="#location">
+                    Location
+                </a>
+
+            </div>
+
+            <div class="footer-copy">
+                © <span id="year"></span> R.K. Fitness and Sports
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="assets.js"></script>
+    <script src="services.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
